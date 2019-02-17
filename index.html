@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Train Scheduler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+
+
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-4 text-center">Train Time</h1>
+        </div>
+    </div>
+    <div class="train-container">
+        <h2 class="text-center">Current Train Schedule</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-sm">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-container"><div class="addTrain"><h3>Add Train</h3></div>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputTrain">Train Name</label>
+                <input type="input" class="form-control" id="trainNameInput" aria-describedby="emailHelp" placeholder="Polar Express">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputDestination">Destination</label>
+                <input type="input" class="form-control" id="destinationInput" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFirstTrain">First Train Time</label>
+                <input type="input" class="form-control" id="firstTrainInput" aria-describedby="emailHelp" placeholder="HH:mm - military time">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFrequency">Frequency (min)</label>
+                <input type="input" class="form-control" id="freqInput" placeholder="5">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+<!-- Moment JS -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/train.js"></script>
+</body>
+</html>

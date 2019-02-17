@@ -1,0 +1,29 @@
+body {
+    background-color: aqua;
+}
+.jumbotron {
+    background-image: url("../images/train.jpg");
+    padding: 5%;
+}
+.h1 {
+    font-size: 64px;
+}
+.train-container {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background: white;
+}
+
+.form-container {
+    margin: 5%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 2%;
+    background: white;
+}
+
+.addTrain {
+    border-bottom: 1px solid black;
+}
